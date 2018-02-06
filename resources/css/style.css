@@ -1,16 +1,19 @@
 html, body {
   margin: 0;
+  padding: 0
 }
 header {
   width: 100%;
   height: 80px;
   position: fixed;
+  top:0;
   z-index: 1;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
   display: flex;
   align-items: center;
+  background-color: white;
   border-bottom: 1px solid black;
 }
 .logo {
@@ -33,4 +36,69 @@ nav li {
 }
 nav a {
   color: black;
+}
+
+/* main section */
+main {
+  position: relative;
+  top: 100px;
+  width: 100%;
+}
+
+article {
+  width: 97%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.column.large {
+  width: 630px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
+}
+.story-main {
+  background-image: url("../../resources/images/img-story-main.png");
+}
+.story-2 {
+  background-image: url("../../resources/images/img-story-2.png");
+}
+.story-3 {
+  background-image: url("../../resources/images/img-story-3.png");
+}
+.story-1 {
+  background-image: url("../../resources/images/img-story-1.png");
+}
+div[class|="story"] {
+  height: 300px;
+  display: flex;
+}
+div[class|="story"] h2 {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+.story-main h2 {
+  font-size: 40px !important;
+}
+p {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+.column-inside {
+  width: 48%;
+  margin-top: 30px;
+}
+.event {
+  height: 300px;
 }
